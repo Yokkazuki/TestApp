@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react"
+// import { themeProvider } from "./theme/themeProvider"
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import Navigation from "./Components/Pages/Navigation"
+import Container from "./Components/Pages/Container"
+import { ThemeContext } from "./Theme/ThemeContext"
+//
+
+//
 
 function App() {
+  const { darkMode } = useContext(ThemeContext)
+  console.log(`darkMode`, darkMode)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Navigation />
+      <Container />
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,13 +1,16 @@
 #theme-light {
     .navbar {
-        background-color: #FCF8EC;
+        background-color: #fcf8ec;
         height: 100px;
-        display: flex;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 2fr 3fr 2fr;
+        > div{
+            padding: 10px
+        }
     }
 
     .nav-searchButton {
-        background-color: #D0E8F2;
+        background-color: #d0e8f2;
         color: #456268;
     }
 
@@ -16,7 +19,7 @@
     a:focus,
     a:active {
         text-decoration: none;
-        color: #79A3B1;
+        color: #79a3b1;
     }
 }
 
@@ -24,13 +27,16 @@
     .navbar {
         background-color: #180a0a;
         height: 100px;
-        display: flex;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 2fr 3fr 2fr;
+        > div{
+            padding: 10px
+        }
     }
 
     .nav-searchButton {
         background-color: #711a75;
-        color: #F10086;
+        color: #f10086;
     }
 
     .navbar a,
@@ -38,29 +44,8 @@
     a:focus,
     a:active {
         text-decoration: none;
-        color: #F582A7;
+        color: #f582a7;
     }
-}
-
-.nav-left {
-    display: flex;
-    flex: 0 0 35%;
-    max-width: 35%;
-    padding: 10px;
-}
-
-.nav-mid {
-    display: flex;
-    flex: 0 0 30%;
-    max-width: 30%;
-    padding: 10px;
-}
-
-.nav-right {
-    display: flex;
-    flex: 0 0 35%;
-    max-width: 35%;
-    padding: 10px;
 }
 
 .nav-icon {

@@ -1,4 +1,4 @@
-import React, { useCallback, useContext } from "react";
+import React, { useContext } from "react";
 import "./Navigation.scss";
 import { FaHome } from "react-icons/fa";
 import { Button, FormControl, InputGroup } from "react-bootstrap";

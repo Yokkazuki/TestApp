@@ -1,0 +1,169 @@
+#theme-light {
+    height: 100%;
+    .Page1 {
+        height: 100%;
+        background-color: #79a3b1;
+        .users-highlight-style {
+            display: flex;
+            flex-wrap: wrap;
+
+            .arrowIcon-left {
+                position: absolute;
+                z-index: 2;
+                margin-top: 110px;
+                font-size: 35px;
+                opacity: 0.5;
+                left: 10px;
+                cursor: pointer;
+            }
+
+            .arrowIcon-right {
+                position: absolute;
+                z-index: 2;
+                margin-top: 110px;
+                right: 10px;
+                font-size: 35px;
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+
+        .users-container {
+            display: flex;
+            position: relative;
+            overflow-x: auto;
+            overflow-y: hidden;
+            margin: 30px;
+            padding: 20px;
+            scroll-behavior: smooth;
+
+            &::-webkit-scrollbar {
+                border-radius: 10px;
+                height: 10px;
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #fcf8ec;
+                border-radius: 10px;
+            }
+
+            .user-card {
+                min-width: 240px;
+                text-shadow: 2px 2px 4px #000000;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                color: #fcf8ec;
+                background-color: #98d2c2;
+                border-radius: 15px 50px 30px;
+                height: 160px;
+                text-align: center;
+                padding: 10px;
+                margin-right: 10px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                .user-thumbnail-container .user-thumbnail {
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    border-radius: 50%;
+                }
+
+                .user-name {
+                    display: flex;
+                    justify-content: center;
+                    overflow: hidden;
+                    .title {
+                        margin-right: 10px;
+                    }
+                    .first {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#theme-dark {
+    .Page1 {
+        background-color: #f582a7;
+        .users-highlight-style {
+            display: flex;
+            flex-wrap: wrap;
+
+            .arrowIcon-left {
+                position: absolute;
+                z-index: 2;
+                margin-top: 110px;
+                font-size: 35px;
+                opacity: 0.5;
+                left: 10px;
+                cursor: pointer;
+            }
+
+            .arrowIcon-right {
+                position: absolute;
+                z-index: 2;
+                margin-top: 110px;
+                right: 10px;
+                font-size: 35px;
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+
+        .users-container {
+            display: flex;
+            position: relative;
+            overflow-x: auto;
+            overflow-y: hidden;
+            margin: 30px;
+            padding: 20px;
+            scroll-behavior: smooth;
+
+            &::-webkit-scrollbar {
+                border-radius: 10px;
+                height: 10px;
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: black;
+                border-radius: 10px;
+            }
+
+            .user-card {
+                min-width: 240px;
+                text-shadow: 2px 2px 4px #000000;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                color: #f10086;
+                background-color: black;
+                border-radius: 15px 50px 30px;
+                height: 160px;
+                text-align: center;
+                padding: 10px;
+                margin-right: 10px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                .user-thumbnail-container .user-thumbnail {
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    border-radius: 50%;
+                }
+
+                .user-name {
+                    display: flex;
+                    justify-content: center;
+                    overflow: hidden;
+                    .title {
+                        margin-right: 10px;
+                    }
+                    .first {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

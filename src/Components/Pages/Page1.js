@@ -1,6 +1,6 @@
-import React, { useMemo,useContext } from "react";
+import React, { useMemo, useContext } from "react";
 import { users } from "../../Data/users";
-import "./page1.scss";
+import "./Page1.scss";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { ThemeContext } from "../../Theme/ThemeContext";
@@ -22,7 +22,7 @@ export default function Page1() {
   return (
     <div id={darkMode ? "theme-dark" : "theme-light"}>
       <div className="Page1">
-        <div className="title"></div>
+        {/* Hightlight */}
         <div className="users-highlight-style">
           <FaArrowCircleLeft
             className="arrowIcon-left"
@@ -53,7 +53,37 @@ export default function Page1() {
             })}
           </div>
         </div>
-        <div className="users-page-style"></div>
+        {/* Page style */}
+        <div className="users-page-style">
+          <div className="users-container">
+            {users?.map((user, i) => {
+              return (
+                <div className="user-card" key={user.cell}>
+                  <div className="user-thumbnail-container">
+                    <img
+                      className="user-thumbnail"
+                      src={user.picture.large}
+                      alt="user thumbnail"
+                    />
+                  </div>
+                  <div className="user-name">
+                    <div className="title">{user.name.title}.</div>
+                    <div className="first">{user.name.first}</div>
+                    <div className="last">{user.name.last}</div>
+                  </div>
+                  <div className="user-info">
+                    <div>{`${user.name.title}. ${user.name.first} ${user.name.last}`}</div>
+                    <div>{user.gender}</div>
+                    <div>{user.location.country}</div>
+                    <div>{user.phone}</div>
+                    <div>{user.email}</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        {/*  */}
       </div>
     </div>
   );

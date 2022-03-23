@@ -1,7 +1,7 @@
 export const linkItems = [
   {
     title: "Home",
-    link: "/TestApp",
+    link: "/TestApp/#/Homepage",
     dropdown: false,
     dropdownItem: [],
   },

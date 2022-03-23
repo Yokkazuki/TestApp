@@ -1,17 +1,14 @@
+@import "../../Data/themeColorConfig.scss";
+
 #theme-light {
     .navbar {
-        background-color: #fcf8ec;
-        height: 100px;
-        display: grid;
-        grid-template-columns: 2fr 3fr 2fr;
-        > div{
-            padding: 10px
-        }
+        background-color: $--theme-light-primary;
     }
 
     .nav-searchButton {
-        background-color: #d0e8f2;
-        color: #456268;
+        background-color: $--theme-light-primary;
+        color: $--theme-light-quaternary;
+        border: 1px solid $--theme-light-quaternary;
     }
 
     .navbar a,
@@ -19,24 +16,19 @@
     a:focus,
     a:active {
         text-decoration: none;
-        color: #79a3b1;
+        color: $--theme-light-quaternary;
     }
 }
 
 #theme-dark {
     .navbar {
-        background-color: #180a0a;
-        height: 100px;
-        display: grid;
-        grid-template-columns: 2fr 3fr 2fr;
-        > div{
-            padding: 10px
-        }
+        background-color: $--theme-dark-primary;
     }
 
     .nav-searchButton {
-        background-color: #711a75;
-        color: #f10086;
+        background-color: $--theme-dark-primary;
+        color: $--theme-dark-quaternary;
+        border: 1px solid $--theme-dark-quaternary;
     }
 
     .navbar a,
@@ -44,23 +36,31 @@
     a:focus,
     a:active {
         text-decoration: none;
-        color: #f582a7;
+        color: $--theme-dark-quaternary;
     }
 }
 
-.nav-icon {
-    font-size: 50px;
-    cursor: pointer;
-}
+.navbar {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    > div {
+        padding: 10px;
+    }
+    .nav-icon {
+        font-size: 50px;
+        cursor: pointer;
+    }
 
-.linkList {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    gap: 40px;
-    font-size: 20px;
-}
+    .linkList {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        gap: 40px;
+        font-size: 20px;
+    }
 
-.nav-darkMode {
-    cursor: pointer;
+    .nav-darkMode {
+        cursor: pointer;
+    }
 }

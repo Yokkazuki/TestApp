@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import "./Container.scss"
 import Homepage from "./Homepage";
 import Page1 from "./Page1";
 import Page2 from "./Page2";

@@ -1,0 +1,47 @@
+.page2-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #343F4F;
+    padding: 0 10px;
+}
+
+.wrapper {
+    max-width: 1200px;
+}
+
+.wrapper .carousel {
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel img {
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    cursor: pointer;
+    width: calc(100%/3);
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+.carousel-button {
+    font-size: 45px;
+    color: white;
+    position: absolute;
+    top: calc(50% + 25px);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.prev {
+    left: 60px;
+}
+
+.next {
+    right: 60px;
+}

@@ -146,9 +146,10 @@
 
         .users-container {
             display: grid;
-            grid-template-columns: repeat(2, 100vmin);
+            grid-template-columns: repeat(2, 1fr);
             place-items: center;
             row-gap: 30px;
+            column-gap: 5vw;
         }
 
         .user-card {

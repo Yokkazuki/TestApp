@@ -14,7 +14,7 @@ export default function Navigation() {
         {/* left */}
         <div className="nav-left">
           <div className="brand">
-            <a href="/TestApp">
+            <a href="/TestApp/#/Homepage">
               <FaHome className="nav-icon" />
             </a>
           </div>
